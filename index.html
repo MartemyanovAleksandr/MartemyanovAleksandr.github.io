@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Рисовалка</title>
+    <link rel="icon" href="./images/pen_red.gif" type="image/x-icon">
+    <link rel="stylesheet" href="drawer.css" />
+    <script src="drawer.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="subWrapper">
+            <div class="toolbar">
+                <span>- Цвет -</span>
+                <div class="colorWrapper">
+                    <a id="black" style="background-color:#000;" title="Черный">
+                    </a>
+                    <a id="white" style="background-color:#fff;" title="Белый">
+                    </a>                    
+                    <a id="red" style="background-color:rgb(255, 110, 110);" title="Красный">
+                    </a>
+                    <a id="green" style="background-color:rgb(93, 255, 147);" title="Зелёный">
+                    </a>
+                    <a id="blue" style="background-color:rgb(93, 148, 251);" title="Синий">
+                    </a>                    
+                </div>
+            </div>
+            <div class="toolbar">
+                <span>- Толщина -</span>
+                <div class="thicknessWrapper">
+                    <a style="height:15px; width:15px;" title="Тонкая кисть" thickness=1>
+                    </a>
+                    <a style="height:20px; width:20px;" title="Нормальная кисть" thickness=5>
+                    </a>
+                    <a style="height:30px; width:30px;" title="Толстая кисть" thickness=10>
+                    </a>
+                </div>
+            </div>
+            <div class="canvasContainer">
+                <canvas id="drawingCanvas"></canvas>
+            </div>
+            <div class="operationWrapper">               
+                <div class="buttonWrapper">
+                    <button id="save">Сохранить</button>
+                    <button id="clear">Очистить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

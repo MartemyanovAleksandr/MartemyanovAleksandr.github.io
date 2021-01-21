@@ -1,0 +1,103 @@
+
+
+.wrapper{
+   text-align: center;
+   font-family: 'Trebuchet MS'; 
+}
+
+.subWrapper{
+    display: inline-block;
+ }
+ 
+/* ------------------------------------toolbar---------------------------------------- */
+
+.toolbar {   
+    box-sizing: border-box;     
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    background: #F2F7FE;
+    border: 1px solid #7B899B;
+}
+
+.toolbar .colorWrapper{
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.toolbar .colorWrapper > a{
+    display: inline-block;
+    vertical-align: middle;   
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.toolbar .colorWrapper > a:hover{
+    box-shadow: 0 0 3px 5px rgb(230, 230, 230);
+}
+
+.toolbar .thicknessWrapper{     
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.toolbar .thicknessWrapper > a{
+    display: inline-block;
+    vertical-align: middle;   
+    border-radius: 50%;
+    background-color: #b6b6b6;
+    border: 1px solid #7B899B; 
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.toolbar .thicknessWrapper > a:hover{
+    box-shadow: 0 0 5px 10px rgb(230, 230, 230);
+}
+
+/* ------------------------------------operationWrapper---------------------------------------- */
+
+.operationWrapper{    
+    font-size: 14px;
+    font-variant: small-caps;    
+    background: #F2F7FE;
+    border: 1px solid #7B899B;
+}
+
+.operationWrapper .buttonWrapper{
+    text-align: right;    
+    padding: 3px 5px;
+}
+
+.operationWrapper .buttonWrapper button {
+    min-width: 85px;
+    padding: 5px;
+    border-radius: 5px;
+    font-variant: normal;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;    
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.operationWrapper .buttonWrapper button:hover{
+    box-shadow: 0 0 10px 2px #7B899B;
+}
+
+.operationWrapper .buttonWrapper button:active{
+    box-shadow: 0 0 10px 2px #b4b4b4;
+}
+/* ------------------------------------canvasContainer---------------------------------------- */
+.canvasContainer{
+    border: 1px solid #7B899B;
+}
+
+.canvasContainer > canvas {
+    width: 300px;
+    height: 150px;
+    cursor: crosshair;
+}
+
